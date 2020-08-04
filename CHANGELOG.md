@@ -1,3 +1,6 @@
+### 0.3.8
+- Fixed assertion when on quick rotations
+
 ### 0.3.6 - 0.3.7
 - Added `extendBody` field
 - Various bug fixes

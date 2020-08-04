@@ -59,7 +59,7 @@ class _SheetExtent {
   }
 
   double get maxScrollExtent {
-    if (controller.hasClients) {
+    if (controller.hasClients && controller.positions?.length == 1) {
       return controller.position?.maxScrollExtent ?? 0.0;
     }
 

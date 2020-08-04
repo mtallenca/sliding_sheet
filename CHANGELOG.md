@@ -1,5 +1,5 @@
 ### 0.3.8
-- Fixed assertion when on quick rotations
+- Fixed assertion on multiple quick rotations
 
 ### 0.3.6 - 0.3.7
 - Added `extendBody` field

@@ -1,4 +1,4 @@
-### 0.3.9+1
+### 0.3.10
 
 - update to flutter 1.21-pre something...
 

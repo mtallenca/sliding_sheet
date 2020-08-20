@@ -1,3 +1,7 @@
+### 0.3.9+1
+
+- update to flutter 1.21-pre something...
+
 ### 0.3.8 - 0.3.9
 - Fixed assertion on multiple quick rotations
 

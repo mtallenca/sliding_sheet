@@ -88,7 +88,7 @@ class SnapSpec {
     return SnapSpec(
       snap: snap ?? this.snap,
       snappings: snappings ?? this.snappings,
-      initialSnap: initialExtent ?? this.initialSnap,
+      initialSnap: initialExtent ?? initialSnap,
       positioning: positioning ?? this.positioning,
       onSnap: onSnap ?? this.onSnap,
     );

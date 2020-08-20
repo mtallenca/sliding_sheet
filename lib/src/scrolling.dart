@@ -59,7 +59,7 @@ class _SheetExtent {
   }
 
   double get maxScrollExtent {
-    if (controller.hasClients && controller.positions?.length == 1) {
+    if (controller.hasClients && controller.numClients == 1) {
       return controller.position?.maxScrollExtent ?? 0.0;
     }
 
@@ -92,6 +92,8 @@ class _SlidingSheetScrollController extends ScrollController {
   _SlidingSheetScrollPosition _currentPosition;
 
   AnimationController controller;
+
+  int get numClients => positions?.length;
 
   TickerFuture snapToExtent(
     double snap,
@@ -126,7 +128,9 @@ class _SlidingSheetScrollController extends ScrollController {
 
         // Needed because otherwise the scrollController
         // thinks were still dragging.
-        jumpTo(offset);
+        if (positions?.length == 1) {
+          jumpTo(offset);
+        }
 
         // Invoke the snap callback.
         snapSpec?.onSnap?.call(

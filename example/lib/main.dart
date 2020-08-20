@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp> {
   SheetState get state => sheetState.value;
   set state(SheetState value) => sheetState.value = value;
 
+  @override
   BuildContext context;
   SheetController controller;
 
@@ -239,7 +240,7 @@ class _MyAppState extends State<MyApp> {
       child: Row(
         children: <Widget>[
           button(
-            Icon(
+            const Icon(
               Icons.navigation,
               color: Colors.white,
             ),
@@ -625,7 +626,7 @@ class _MyAppState extends State<MyApp> {
               onPressed: () async {
                 await showBottomSheetDialog(context);
               },
-              child: Icon(
+              child: const Icon(
                 Icons.layers,
                 color: mapsBlue,
               ),
